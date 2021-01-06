@@ -9,30 +9,14 @@ package makeupproject;
  *
  * @author user
  */
-public class TypeOfMakeup {
+public abstract class TypeOfMakeup { 
     String lipstick, eyeshadow, mascara, blusher;
     
-    public TypeOfMakeup(String lipstick, String eyeshadow, String mascara, String blusher){
-        this.lipstick = lipstick;
-        this.eyeshadow = eyeshadow;
-        this.mascara = mascara;
-        this.blusher = blusher;
-    }
-    
-    public void setLipstick(String lipstick){
-        this.lipstick = lipstick;
-    }
-    
-    public void setEyeShadow(String eyeshadow){
-        this.eyeshadow = eyeshadow;
-    }
-    
-    public void setMascara(String mascara){
-        this.mascara = mascara;
-    }
-    
-    public void setBlusher(String blusher){
-        this.blusher = blusher;
+    public void setMakeup(String newLipstick, String newEyeshadow, String newMascara, String newBlusher){
+        lipstick = newLipstick;
+        eyeshadow = newEyeshadow;
+        mascara = newMascara;
+        blusher = newBlusher;
     }
     
     public String getLipstick(){
@@ -49,5 +33,13 @@ public class TypeOfMakeup {
     
     public String getBlusher(){
         return blusher;
+    }
+    
+    void HowToUse(){
+        System.out.println("How to use this item: ");
+    }
+    
+    void WhereToBuy(){
+        System.out.println("You can find this item at: ");
     }
 }

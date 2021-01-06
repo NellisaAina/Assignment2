@@ -9,7 +9,8 @@ package makeupproject;
  *
  * @author user
  */
-public class Branding {
+public class Branding extends TypeOfMakeup{
+    
     String Brand1, Brand2, Brand3, Brand4;
     
     public Branding(String Brand1, String Brand2, String Brand3, String Brand4){
